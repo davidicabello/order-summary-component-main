@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 * {
+
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 :root {
-    /* ### Primary */
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
-    /* ### Neutral */
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
@@ -21,6 +20,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    background: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+}
+
+h1 {
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
 }
 
 .main-container {
@@ -28,14 +39,35 @@ body {
 }
 
 .card {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: var(--very-pale-blue);
+    box-shadow: 0px 0px 5px 0px 10px 10px var(--dark-blue);
+}
 
+.img-container img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 15px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .attribution {
-    margin-top: 120px;
+    margin-top: 50px;
     font-size: 11px;
     text-align: center;
 }
